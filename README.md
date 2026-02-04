@@ -16,22 +16,22 @@ Users should be able to:
 
 ### Screenshot
 
-Mobile
+Desktop
 
-![<img src="./screenshot/mobile.webp" height="900"/>](./screenshot/mobile.webp)
+![<img src="./screenshot/desktop.webp" height="450"/>](./screenshot/desktop.webp)
 
 Tablet
 
 ![<img src="./screenshot/tablet.webp" height="675"/>](./screenshot/tablet.webp)
 
-Desktop
+Mobile
 
-![<img src="./screenshot/desktop.webp" height="450"/>](./screenshot/desktop.webp)
+![<img src="./screenshot/mobile.webp" height="900"/>](./screenshot/mobile.webp)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/newsletter-sign-up-form-using-sass-and-justvalidate-KkbBuAWA3n](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-using-sass-and-justvalidate-KkbBuAWA3n)
+- Live Site URL: [https://nuzaty.github.io/fm-10-newsletter-signup/](https://nuzaty.github.io/fm-10-newsletter-signup/)
 
 ## My process
 
@@ -41,9 +41,10 @@ Desktop
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Sass (Dart Sass)
-- BEM
+- [Sass (Dart Sass)](https://sass-lang.com/)
+- [BEM](https://getbem.com/)
 - JS
+- [JustValidate](https://just-validate.dev/)
 
 ### CSS build
 
