@@ -37,14 +37,14 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -225,7 +225,7 @@ main {
   content: "";
   width: 1.3125rem;
   height: 1.3125rem;
-  background: url("../../assets/images/icon-list.svg") no-repeat center/contain;
+  background: url("../assets/images/icon-list.svg") no-repeat center/contain;
 }
 .card__form {
   margin-top: 1rem;
