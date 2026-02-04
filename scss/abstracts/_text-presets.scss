@@ -1,0 +1,32 @@
+@use 'tokens' as *;
+@use 'media' as *;
+
+@mixin text-preset($family, $size, $weight, $line-height, $letter-spacing: null) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+
+  @if $letter-spacing {
+    letter-spacing: $letter-spacing;
+  }
+}
+
+%text-preset- {
+  &1 {
+    @include text-preset($font-roboto, 2.5rem, $fw-bold, 1);
+
+    @include from-tablet {
+      @include text-preset($font-roboto, 3.5rem, $fw-bold, 1);
+    }
+  }
+  &2-bold {
+    @include text-preset($font-roboto, 1rem, $fw-bold, 1.5);
+  }
+  &2-regular {
+    @include text-preset($font-roboto, 1rem, $fw-regular, 1.5);
+  }
+  &3 {
+    @include text-preset($font-roboto, 0.75rem, $fw-bold, 1.5);
+  }
+}

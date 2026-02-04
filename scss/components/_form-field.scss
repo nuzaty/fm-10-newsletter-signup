@@ -1,0 +1,46 @@
+@use '../abstracts' as *;
+
+.form-field {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: $space-100;
+
+  label {
+    @extend %text-preset-3;
+  }
+
+  input {
+    padding: $space-200 $space-300;
+    color: $color-blue-800;
+    background-color: $color-white;
+    border: 1px solid $color-grey;
+    border-radius: $space-100;
+    outline: none;
+
+    &:focus {
+      border-color: $color-blue-800;
+    }
+
+    &::placeholder {
+      color: $color-grey;
+    }
+
+    &.is-error {
+      color: $color-red;
+      border-color: $color-red;
+      background-color: $color-field-error;
+    }
+  }
+
+  // use :has() for safety only; not required for correct behavior
+  &:has(input.is-error) {
+    .error-msg {
+      @extend %text-preset-3;
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: $color-red;
+    }
+  }
+}

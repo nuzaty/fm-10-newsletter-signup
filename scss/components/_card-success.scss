@@ -1,0 +1,54 @@
+@use '../abstracts' as *;
+
+.card-success {
+  background: $color-white;
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  padding-inline: $space-300;
+  padding-top: max($space-400, 17.696vh); // match Figma
+  padding-bottom: max($space-400, 8.314vh); // match Figma
+
+  @include from-tablet {
+    height: auto;
+    width: 31.5rem; // match Figma
+    border-radius: 2.25rem; // match Figma
+    padding-block: 3.75rem; // match Figma
+    padding-inline: $space-800;
+  }
+
+  &.is-visible {
+    display: flex;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: $space-400;
+  }
+
+  &__icon {
+    // match Figma
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__title {
+    @extend %text-preset-1;
+  }
+
+  &__description {
+    @extend %text-preset-2-regular;
+  }
+
+  &__email {
+    @extend %text-preset-2-bold;
+    overflow-wrap: anywhere;
+  }
+
+  &__dismiss-btn {
+    margin-top: auto;
+  }
+}

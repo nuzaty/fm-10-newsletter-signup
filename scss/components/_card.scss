@@ -1,0 +1,118 @@
+@use '../abstracts' as *;
+
+.card {
+  background: $color-white;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &.is-visible {
+    display: flex;
+  }
+
+  @include from-tablet {
+    width: auto;
+    height: auto;
+    padding: $space-500;
+    border-radius: 2.25rem; // match Figma
+  }
+
+  @include from-desktop {
+    flex-direction: row-reverse;
+    // 2rem @ 1024px to 4rem @ 1440px (From Figma)
+    gap: clamp($space-400, -2.923rem + 7.692vw, $space-800);
+    padding-inline: $space-400;
+    padding-block: $space-300;
+  }
+
+  &__image {
+    aspect-ratio: 375 / 284; // match Figma
+    min-height: 13.5rem; // ~75% of 284px
+    max-height: 19.5rem; // ~110% of 284px
+    border-radius: 0 0 $space-200 $space-200;
+    overflow: hidden;
+
+    @include from-tablet {
+      aspect-ratio: 528 / 358; // match Figma
+      min-height: unset;
+      max-height: unset;
+      border-radius: 0;
+    }
+
+    @include from-desktop {
+      aspect-ratio: 400 / 593; // match Figma
+      // 18rem @ 1024px to 25rem @ 1440px (From Figma)
+      flex: 0 0 clamp(18rem, 0.769rem + 26.923vw, 25rem);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $space-300;
+    padding-block: $space-500;
+    padding-inline: $space-300;
+
+    @include from-tablet {
+      margin-top: $space-500;
+      padding: 0;
+    }
+
+    @include from-desktop {
+      margin-top: 0;
+      gap: $space-400;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    @extend %text-preset-1;
+  }
+
+  &__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: $space-100;
+
+    $benefit-icon-size: 1.3125rem; // match Figma
+
+    li {
+      display: grid;
+      grid-template-columns: $benefit-icon-size 1fr;
+      column-gap: $space-200;
+      align-items: start;
+
+      &::before {
+        content: '';
+        width: $benefit-icon-size;
+        height: $benefit-icon-size;
+        background: url('../../assets/images/icon-list.svg') no-repeat center / contain;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: $space-200;
+    display: flex;
+    flex-direction: column;
+    gap: $space-300;
+
+    @include from-tablet {
+      margin-top: 0;
+      gap: $space-200;
+    }
+
+    @include from-desktop {
+      margin-top: 0;
+      gap: $space-300;
+    }
+  }
+}

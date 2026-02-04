@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.button {
+  @extend %text-preset-2-bold;
+  width: 100%;
+  padding: $space-200;
+  color: $color-white;
+  background: $color-blue-800;
+  border-radius: $space-100;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-red;
+  }
+
+  @include from-desktop {
+    transition:
+      box-shadow 0.15s ease,
+      transform 0.05s ease;
+
+    &:hover {
+      background: $color-gradient-4;
+      box-shadow: 0px 16px 32px rgba(255, 97, 85, 0.5); // match Figma
+    }
+
+    &:active {
+      box-shadow: 0px 4px 8px rgba(255, 97, 85, 0.35);
+      transform: translateY(1px);
+    }
+  }
+}

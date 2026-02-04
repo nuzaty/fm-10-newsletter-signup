@@ -1,0 +1,33 @@
+/* colors */
+$color-white: hsl(0, 0%, 100%);
+$color-grey: hsl(0, 0%, 58%);
+$color-blue-800: hsl(234, 29%, 20%);
+$color-blue-700: hsl(235, 18%, 26%);
+$color-red: hsl(4, 100%, 67%);
+$color-gradient-4: linear-gradient(to right, hsl(15, 100%, 61%), hsl(346, 100%, 66%));
+
+$color-field-error: hsl(2.4, 100%, 95.1%);
+
+/* fonts */
+$font-roboto: 'Roboto', sans-serif;
+$fw-bold: 700;
+$fw-regular: 400;
+
+/* spacing */
+$space-100: 0.5rem;
+$space-200: 1rem;
+$space-300: 1.5rem;
+$space-400: 2rem;
+$space-500: 2.5rem;
+$space-600: 3rem;
+$space-800: 4rem;
+$space-900: 4.5rem;
+$space-1300: 6.5rem;
+
+/* breakpoints */
+$bp-sm: 23.4375rem;
+$bp-md: 48rem;
+$bp-lg: 64rem;
+$bp-xl: 90rem;
+
+$content-max-width: $bp-xl;
