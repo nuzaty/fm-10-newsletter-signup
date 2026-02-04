@@ -18,15 +18,15 @@ Users should be able to:
 
 Desktop
 
-[<img src="./screenshot/desktop.webp" height="450"/>](./screenshot/desktop.webp)
+![](./screenshot/desktop.webp)
 
 Tablet
 
-[<img src="./screenshot/tablet.webp" height="675"/>](./screenshot/tablet.webp)
+![](./screenshot/tablet.webp)
 
 Mobile
 
-[<img src="./screenshot/mobile.webp" height="900"/>](./screenshot/mobile.webp)
+![](./screenshot/mobile.webp)
 
 ### Links
 
